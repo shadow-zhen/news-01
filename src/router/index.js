@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import User from '../views/User.vue'
+import Edit from '../views/Edit.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,10 @@ const router = new VueRouter({
 		{
 			path: '/user',
 			component: User,
+		},
+		{
+			path: '/edit',
+			component: Edit,
 		},
 	],
 })

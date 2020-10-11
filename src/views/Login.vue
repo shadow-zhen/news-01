@@ -89,8 +89,8 @@ export default {
 			) {
 				this.$toast.success('验证成功')
 				//发送ajax请求
-				axios
-					.post('http://localhost:3000/login', {
+				this.$axios
+					.post('/login', {
 						username,
 						password,
 					})
