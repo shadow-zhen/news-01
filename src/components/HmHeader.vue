@@ -14,7 +14,7 @@ export default {}
 .hm-header {
 	display: flex;
 	height: 40px;
-	background-color: #cc3300;
+	background-color: #ddd;
 	border-bottom: 2px solid #ccc;
 	align-items: center;
 

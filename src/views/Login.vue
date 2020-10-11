@@ -100,6 +100,7 @@ export default {
 						if (statusCode === 200) {
 							//保存token
 							localStorage.setItem('token', data.token)
+							localStorage.setItem('user_id', data.user.id)
 							//提示登录成功
 							this.$toast.success(message)
 							//跳转到用户页
