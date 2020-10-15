@@ -66,8 +66,10 @@ import {
 	Radio,
 	RadioGroup,
 	Uploader,
+	List,
 } from 'vant'
 
+Vue.use(List)
 Vue.use(Uploader)
 Vue.use(Radio)
 Vue.use(RadioGroup)

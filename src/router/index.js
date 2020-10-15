@@ -6,6 +6,7 @@ import Register from '../views/Register.vue'
 import User from '../views/User.vue'
 import Edit from '../views/Edit.vue'
 import MyFollow from '../views/MyFollow.vue'
+import MyComment from '../views/MyComment.vue'
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,10 @@ const router = new VueRouter({
 		{
 			path: '/my-follow',
 			component: MyFollow,
+		},
+		{
+			path: '/my-comment',
+			component: MyComment,
 		},
 	],
 })
