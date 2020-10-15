@@ -5,6 +5,7 @@ import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import User from '../views/User.vue'
 import Edit from '../views/Edit.vue'
+import MyFollow from '../views/MyFollow.vue'
 
 Vue.use(VueRouter)
 
@@ -25,6 +26,14 @@ const router = new VueRouter({
 		{
 			path: '/edit',
 			component: Edit,
+		},
+		{
+			path: '/edit',
+			component: Edit,
+		},
+		{
+			path: '/my-follow',
+			component: MyFollow,
 		},
 	],
 })

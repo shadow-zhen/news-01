@@ -1,6 +1,8 @@
 <template>
 	<div class="hm-header">
-		<div class="left"><i class="iconfont iconjiantou2"></i></div>
+		<div class="left" @click="$router.back()">
+			<i class="iconfont iconjiantou2"></i>
+		</div>
 		<div class="center"><slot></slot></div>
 		<div class="right"></div>
 	</div>
