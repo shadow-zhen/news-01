@@ -11,7 +11,12 @@
 			</div>
 			<div class="bottom">
 				<span>{{ post.user.nickname }}</span>
-				<span>{{ post.comments.length }} 跟帖</span>
+				<span
+					>{{
+						post.comments ? post.comments.length : post.comment_length
+					}}
+					跟帖</span
+				>
 			</div>
 		</div>
 		<!-- 单张图片 -->
@@ -25,7 +30,12 @@
 				</p>
 				<p class="bottom">
 					<span>{{ post.user.nickname }}</span>
-					<span>{{ post.comments.length }} 跟帖</span>
+					<span
+						>{{
+							post.comments ? post.comments.length : post.comment_length
+						}}
+						跟帖</span
+					>
 				</p>
 			</div>
 			<div class="right">
@@ -44,7 +54,12 @@
 			</div>
 			<div class="bottom">
 				<span>{{ post.user.nickname }}</span>
-				<span>{{ post.comments.length }} 跟帖</span>
+				<span
+					>{{
+						post.comments ? post.comments.length : post.comment_length
+					}}
+					跟帖</span
+				>
 			</div>
 		</div>
 	</div>
@@ -118,7 +133,7 @@ export default {
 			position: relative;
 
 			img {
-				width: 340px;
+				width: 100%;
 				height: 170px;
 				padding: 10px;
 				object-fit: cover;
