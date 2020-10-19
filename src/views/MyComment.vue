@@ -55,7 +55,7 @@ export default {
 					pageSize: 5, // 每页的条数
 				},
 			})
-			console.log(res)
+			// console.log(res)
 			const { data, statusCode } = res.data
 			if (statusCode === 200) {
 				this.comments = [...this.comments, ...data]

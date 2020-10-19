@@ -37,8 +37,8 @@ import axios from 'axios'
 export default {
 	data() {
 		return {
-			username: '123456', //用户名
-			password: '123456', //密码
+			username: '10086', //用户名
+			password: '123', //密码
 			usernameErrMsg: '', //用户名错误提示信息
 			passwordErrMsg: '', //密码错误提示信息
 		}
