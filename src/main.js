@@ -21,6 +21,10 @@ Vue.filter('date', (val, format = 'YYYY-MM-DD') => {
 	return moment(val).format(format)
 })
 
+//注册事件总线
+const bus = new Vue()
+Vue.prototype.$bus = bus
+
 //全局引入axios
 import axios from 'axios'
 //处理axios
@@ -71,8 +75,10 @@ import {
 	Tabs,
 	Sticky,
 	PullRefresh,
+	Icon,
 } from 'vant'
 
+Vue.use(Icon)
 Vue.use(PullRefresh)
 Vue.use(Sticky)
 Vue.use(Tab)
@@ -92,10 +98,14 @@ import HmHeader from './components/HmHeader.vue'
 import HmLogo from './components/HmLogo.vue'
 import HmButton from './components/HmButton.vue'
 import HmPost from './components/HmPost.vue'
+import HmComment from './components/HmComment.vue'
+import HmFloor from './components/HmFloor.vue'
 Vue.component('hm-header', HmHeader)
 Vue.component('hm-logo', HmLogo)
 Vue.component('hm-button', HmButton)
 Vue.component('hm-post', HmPost)
+Vue.component('hm-comment', HmComment)
+Vue.component('hm-floor', HmFloor)
 
 new Vue({
 	router,

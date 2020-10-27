@@ -37,6 +37,7 @@
 							v-for="post in posts"
 							:post="post"
 							:key="post.id"
+							@click.native="$router.push(`/detail/${post.id}`)"
 						></hm-post>
 					</van-list>
 				</van-pull-refresh>
@@ -47,6 +48,7 @@
 
 <script>
 export default {
+	name: 'home',
 	data() {
 		return {
 			active: 1, //栏目列表的下标

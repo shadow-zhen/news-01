@@ -11,35 +11,22 @@
 			</div>
 			<div class="bottom">
 				<span>{{ post.user.nickname }}</span>
-				<span
-					>{{
-						post.comments ? post.comments.length : post.comment_length
-					}}
-					跟帖</span
-				>
+				<span>{{ post.comments ? post.comments.length : post.comment_length }} 跟帖</span>
 			</div>
 		</div>
 		<!-- 单张图片 -->
-		<div
-			class="single-img-post"
-			v-else-if="post.type === 1 && post.cover.length < 3"
-		>
+		<div class="single-img-post" v-else-if="post.type === 1 && post.cover.length < 3">
 			<div class="left">
 				<p class="title line2">
 					{{ post.title }}
 				</p>
 				<p class="bottom">
 					<span>{{ post.user.nickname }}</span>
-					<span
-						>{{
-							post.comments ? post.comments.length : post.comment_length
-						}}
-						跟帖</span
-					>
+					<span>{{ post.comments ? post.comments.length : post.comment_length }} 跟帖</span>
 				</p>
 			</div>
 			<div class="right">
-				<img :src="fixImg(post.cover[0].url)" alt="" />
+				<img v-if="post.cover[0]" :src="fixImg(post.cover[0].url)" alt="" />
 			</div>
 		</div>
 		<!-- 多张图片 -->
@@ -54,12 +41,7 @@
 			</div>
 			<div class="bottom">
 				<span>{{ post.user.nickname }}</span>
-				<span
-					>{{
-						post.comments ? post.comments.length : post.comment_length
-					}}
-					跟帖</span
-				>
+				<span>{{ post.comments ? post.comments.length : post.comment_length }} 跟帖</span>
 			</div>
 		</div>
 	</div>

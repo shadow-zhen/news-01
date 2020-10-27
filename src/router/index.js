@@ -6,6 +6,7 @@ import Register from '../views/Register.vue'
 import User from '../views/User.vue'
 import Edit from '../views/Edit.vue'
 import Home from '../views/Home.vue'
+import Detail from '../views/Detail.vue'
 import MyFollow from '../views/MyFollow.vue'
 import MyComment from '../views/MyComment.vue'
 import MyStar from '../views/MyStar.vue'
@@ -37,6 +38,10 @@ const router = new VueRouter({
 		{
 			path: '/home',
 			component: Home,
+		},
+		{
+			path: '/detail/:post_id',
+			component: Detail,
 		},
 		{
 			path: '/my-follow',
