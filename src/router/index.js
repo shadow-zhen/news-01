@@ -10,6 +10,7 @@ import Detail from '../views/Detail.vue'
 import MyFollow from '../views/MyFollow.vue'
 import MyComment from '../views/MyComment.vue'
 import MyStar from '../views/MyStar.vue'
+import Search from '../views/Search.vue'
 
 Vue.use(VueRouter)
 
@@ -54,6 +55,10 @@ const router = new VueRouter({
 		{
 			path: '/my-star',
 			component: MyStar,
+		},
+		{
+			path: '/search',
+			component: Search,
 		},
 	],
 })
